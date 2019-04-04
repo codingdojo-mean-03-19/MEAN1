@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Books and Authors</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="/authors/">Authors</a></li>
+      <li><a href="/books/">Books</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <fieldset>
+      <legend>Create Author</legend>
+
+      <form action="/authors" method='post' autocomplete="off">
+        <div>
+          <label for="">name</label>
+          <input type="text" name='name'>
+        </div>
+        <div>
+          <label for="">age</label>
+          <input type="number" name='age'>
+        </div>
+        <div>
+          <label for="">Is Alive?</label>
+          <input type="radio" name='isAlive' value='true'>True
+          <input type="radio" name='isAlive' value='false'>False
+        </div>
+
+        <button>Submit</button>
+      </form>
+    </fieldset>
+  </section>
+</body>
+</html>
